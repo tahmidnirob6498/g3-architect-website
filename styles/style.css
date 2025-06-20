@@ -106,15 +106,13 @@ max-width: 530px;
 
 /* media query */
 @media screen and (max-width:576px) {
-    .navbar{
+    .navbar,.teams{
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
     /* padding: 5px 10px; */
     
     }
-    
-    
     
 .architect{
     font-size: 2rem;
@@ -123,7 +121,13 @@ max-width: 530px;
     font-size: 2rem;
     font-weight: 700;
 }
+.team-img{
+    grid-template-columns: repeat(1,1fr);
+}
 
-
-    
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
 }
