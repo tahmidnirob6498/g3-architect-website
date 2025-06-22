@@ -136,6 +136,52 @@ max-width: 530px;
     font-size: 1.2rem;
     margin: 0 auto;
 }
+.sponser-details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sponser-img{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 9.5rem;
+}
+.sponser-img img{
+    filter: grayscale(100%);
+    max-width: 100%;
+}
+.feature{
+    max-width: 100%;
+    justify-content: space-around;
+}
+.feature-about{
+    max-width: 580px;
+}
+.section-card{
+    max-width: 580px;
+    margin-bottom: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.feature-head{
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.feature-img img{
+    
+    max-width: 100%;
+}
+main{
+    margin-bottom: 130px;
+}
+.footer{
+    text-align: center
+    ;
+    padding: 31px;
+    max-width: 100%;
+}
 
 
 
@@ -144,7 +190,7 @@ max-width: 530px;
 @media screen and (max-width:576px) {
     .navbar,.teams{
     flex-direction: column;
-    margin: 0 auto;
+    margin:0 auto;
     text-align: center;
     /* padding: 5px 10px; */
     
@@ -166,6 +212,7 @@ max-width: 530px;
     grid-template-columns: repeat(1,1fr);
     
 }
+.
 .facts{
  display: flex;
  flex-direction: column;
@@ -179,17 +226,54 @@ max-width: 530px;
      .card{
         grid-template-columns: repeat(1,1fr);
         gap:2rem;
+        justify-items: center;
 }
+.feature{
+    flex-direction: column;
+}
+.feature-img img{
+    padding: 0;
+
+}
+.sponser-img{
+    grid-template-columns: repeat(1,1fr);
+    gap: 50px;
+  justify-items: center;
 }
 
+
+}
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
-        flex-direction: column;
+  .navbar,.teams{
+    flex-direction: column;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
     }
     .card{
         grid-template-columns: repeat(2,1fr);
         gap:2rem;
+        justify-items: center;
+
         
     }
-    
+    .sponser-img{
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+  justify-items: center;
+}
+.feature{
+    flex-direction: column;}
+.section-card{
+    padding: 30px;
+    margin: 30px;
+}
+.feature-img{
+    padding: 30px;
+    margin: 30px;
+}
+}
+
+
+}
