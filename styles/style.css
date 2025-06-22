@@ -230,6 +230,7 @@ main{
 }
 .feature{
     flex-direction: column;
+    text-align: center;
 }
 .feature-img img{
     padding: 0;
